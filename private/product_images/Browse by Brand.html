@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<!-- saved from url=(0116)https://comotosho1.dmitstudent.ca/dmit2025/workbook/labs/catalog/public/browseBy.php?category=Brand&subcategory=Nike -->
+<html lang="en" style="transition-property: none; margin-right: 0px;" data-qb-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Browse by Brand    </title>
+    <!-- BS Styles -->
+    <link href="./Browse by Brand_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- BS Icons -->
+    <link rel="stylesheet" href="./Browse by Brand_files/bootstrap-icons.css">
+<style type="text/css">.lf-progress {
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  width: 100%;
+  /* margin: 0 10px; */
+  height: 4px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.lf-progress:focus {
+  outline: none;
+  border: none;
+}
+.lf-progress::-moz-range-track {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+.lf-progress::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-moz-range-thumb {
+  -moz-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-ms-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.lf-progress::-ms-fill-lower {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-fill-upper {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-thumb {
+  border: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress:focus::-ms-fill-lower {
+  background: #ccc;
+}
+.lf-progress:focus::-ms-fill-upper {
+  background: #ccc;
+}
+.lf-player-container :focus {
+  outline: 0;
+}
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-player-btn-container {
+  display: flex;
+  align-items: center;
+}
+.lf-player-btn {
+  cursor: pointer;
+  fill: #999;
+  width: 14px;
+}
+
+.lf-player-btn.active {
+  fill: #555;
+}
+
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  background-color: #ffffff;
+  opacity: 1;
+
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  padding: 10px;
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-arrow {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  bottom: -9px;
+  border-style: solid;
+  border-width: 10px 10px 0px 10px;
+}
+
+.lf-left-align,
+.lf-left-align .lfarrow {
+  left: 0;
+  right: unset;
+}
+
+.lf-right-align,
+.lf-right-align .lf-arrow {
+  right: 0;
+  left: unset;
+}
+
+.lf-text-input {
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  padding: 3px;
+  width: 60px;
+  margin: 0;
+}
+
+.lf-color-picker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.lf-color-selectors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lf-color-component {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lf-color-component strong {
+  width: 40px;
+}
+
+.lf-color-component input[type='range'] {
+  margin: 0 0 0 10px;
+}
+
+.lf-color-component input[type='number'] {
+  width: 50px;
+  margin: 0 0 0 10px;
+}
+
+.lf-color-preview {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+.lf-preview {
+  height: 60px;
+  width: 60px;
+}
+
+.lf-popover-snapshot {
+  width: 150px;
+}
+.lf-popover-snapshot h5 {
+  margin: 5px 0 10px 0;
+  font-size: 0.75rem;
+}
+.lf-popover-snapshot a {
+  display: block;
+  text-decoration: none;
+}
+.lf-popover-snapshot a:before {
+  content: '⥼';
+  margin-right: 5px;
+}
+.lf-popover-snapshot .lf-note {
+  display: block;
+  margin-top: 10px;
+  color: #999;
+}
+.lf-player-controls > div {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.lf-player-controls > div:first-child {
+  margin-left: 0px;
+}
+.lf-player-controls > div:last-child {
+  margin-right: 0px;
+}
+</style><style id="ReanimatedPredefinedWebAnimationsStyle"></style><style id="ReanimatedCustomWebAnimationsStyle"></style><style type="text/css">.lf-progress {
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  width: 100%;
+  /* margin: 0 10px; */
+  height: 4px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.lf-progress:focus {
+  outline: none;
+  border: none;
+}
+.lf-progress::-moz-range-track {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+.lf-progress::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-moz-range-thumb {
+  -moz-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-ms-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.lf-progress::-ms-fill-lower {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-fill-upper {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-thumb {
+  border: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress:focus::-ms-fill-lower {
+  background: #ccc;
+}
+.lf-progress:focus::-ms-fill-upper {
+  background: #ccc;
+}
+.lf-player-container :focus {
+  outline: 0;
+}
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-player-btn-container {
+  display: flex;
+  align-items: center;
+}
+.lf-player-btn {
+  cursor: pointer;
+  fill: #999;
+  width: 14px;
+}
+
+.lf-player-btn.active {
+  fill: #555;
+}
+
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  background-color: #ffffff;
+  opacity: 1;
+
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  padding: 10px;
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-arrow {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  bottom: -9px;
+  border-style: solid;
+  border-width: 10px 10px 0px 10px;
+}
+
+.lf-left-align,
+.lf-left-align .lfarrow {
+  left: 0;
+  right: unset;
+}
+
+.lf-right-align,
+.lf-right-align .lf-arrow {
+  right: 0;
+  left: unset;
+}
+
+.lf-text-input {
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  padding: 3px;
+  width: 60px;
+  margin: 0;
+}
+
+.lf-color-picker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.lf-color-selectors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lf-color-component {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lf-color-component strong {
+  width: 40px;
+}
+
+.lf-color-component input[type='range'] {
+  margin: 0 0 0 10px;
+}
+
+.lf-color-component input[type='number'] {
+  width: 50px;
+  margin: 0 0 0 10px;
+}
+
+.lf-color-preview {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+.lf-preview {
+  height: 60px;
+  width: 60px;
+}
+
+.lf-popover-snapshot {
+  width: 150px;
+}
+.lf-popover-snapshot h5 {
+  margin: 5px 0 10px 0;
+  font-size: 0.75rem;
+}
+.lf-popover-snapshot a {
+  display: block;
+  text-decoration: none;
+}
+.lf-popover-snapshot a:before {
+  content: '⥼';
+  margin-right: 5px;
+}
+.lf-popover-snapshot .lf-note {
+  display: block;
+  margin-top: 10px;
+  color: #999;
+}
+.lf-player-controls > div {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.lf-player-controls > div:first-child {
+  margin-left: 0px;
+}
+.lf-player-controls > div:last-child {
+  margin-right: 0px;
+}
+</style></head>
+
+<body class="d-flex flex-column justify-content-between min-vh-100" data-new-gr-c-s-check-loaded="14.1213.0" data-gr-ext-installed="">
+    <header class="text-center">
+        <nav class="py-2 bg-dark border-bottom">
+            <div class="container d-flex flex-wrap">
+                <ul class="nav me-auto">
+                    <li class="nav-item"><a href="https://comotosho1.dmitstudent.ca/dmit2025/workbook/labs/catalog/public/browseBy.php?category=Brand&amp;subcategory=Nike#" class="nav-link link-light link-body-emphasis px-2">Browse by: </a>
+                    </li>
+                    <!-- Depending upon the categories that you choose, the link text and referenced page will differ. -->
+                    <li class="nav-item"><a href="https://comotosho1.dmitstudent.ca/dmit2025/workbook/labs/catalog/public/browseBy.php?category=Category" class="nav-link link-light link-body-emphasis px-2">Product Type |</a></li>
+                    <li class="nav-item"><a href="https://comotosho1.dmitstudent.ca/dmit2025/workbook/labs/catalog/public/browseBy.php?category=Brand" class="nav-link link-light link-body-emphasis px-2"> Brand</a></li>
+                </ul>
+                <!-- <ul class="nav">
+                    <li class="nav-item"><a href="search.php"
+                            class="nav-link link-light link-body-emphasis px-2">Advanced Search</a></li>
+                </ul> -->
+                <ul class="nav">
+                    <form action="https://comotosho1.dmitstudent.ca/dmit2025/workbook/labs/catalog/public/search-results.php" method="get" class="d-flex align-items-center rounded">
+                        <label for="index_search" class="me-2">Search:</label>
+                        <input class="form-control me-2" type="text" name="index_search" id="index_search" value="" required="">
+                        <input class="btn btn-success" type="submit" value="Search" name="search">
+                    </form>
+
+                </ul>
+            </div>
+        </nav>
+        <section class="py-3 mb-4 border-bottom">
+            <div class="container d-flex flex-wrap justify-content-center">
+                <a href="https://comotosho1.dmitstudent.ca/dmit2025/workbook/labs/catalog/public/index.php" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 473 473" xml:space="preserve">
+    <path d="M451.4 315c-.5-.3-1.8-.6-2.4-.9l-201-88.9v-28.8c38.2-4.6 57-29.9 57-62.3 0-36-25.2-63-59.3-63a66 66 0 0 0-65.8 64.3c0 6 5 11 11 11q2.7-.1 5-1.4c3.5-1.8 6-5.3 6-9.6A44.6 44.6 0 0 1 246 92.8c22 0 38 17.4 38 41.3 0 23.5-19 41.2-45 41.2-6 0-10.3 5-10.3 11v42.5l-.4.6-192.7 91.2C7.2 330.8-2.6 354 .6 371.9c3.1 18.3 18.7 30 38.7 30h383c23.7 0 42.4-12.3 48.6-32.9a48 48 0 0 0-19.5-54m-1.3 49c-3.4 11.5-13.6 18.8-27.8 18.8h-383c-9.7 0-16-5.4-17.5-13.3-1.5-9.1 4.3-22 21.9-28.5l199.5-94.5L440.1 334c9.2 6.6 13.3 19 10 30" fill="#198754"></path>
+</svg>
+
+                    <h1 class="fs-4 fw-light px-3" style="color: #198754"> Clem's Gems</h1>
+                </a>
+            </div>
+        </section>
+    </header>
+
+<!-- If category is provided and is brands -->
+
+
+
+
+
+    <h1 class="text-center">Browse by Nike</h1>
+    <div class="text-center">
+        
+                            <div class="d-flex flex-wrap justify-content-center">
+                    <a class="text-center text-decoration-none text-dark" href="https://comotosho1.dmitstudent.ca/dmit2025/workbook/labs/catalog/public/view.php?title=Reversible%20Vintage%20Nike%20Windbreaker">
+        <div class="card" style="width: 18rem; margin: 10px;">
+            <img src="./Browse by Brand_files/Nike_Windbreaker_1000x1000.webp" class="card-img-top" alt="Card image">
+            <div class="card-body">
+                <h5 class="card-title">Reversible Vintage Nike Windbreaker</h5>
+            </div>
+        </div></a>
+        <a class="text-center text-decoration-none text-dark" href="https://comotosho1.dmitstudent.ca/dmit2025/workbook/labs/catalog/public/view.php?title=Nike%20ACG%20Rufus%20Forest%20Green">
+        <div class="card" style="width: 18rem; margin: 10px;">
+            <img src="./Browse by Brand_files/NikeRufus_1000x1000.webp" class="card-img-top" alt="Card image">
+            <div class="card-body">
+                <h5 class="card-title">Nike ACG Rufus Forest Green</h5>
+            </div>
+        </div></a>
+        <a class="text-center text-decoration-none text-dark" href="https://comotosho1.dmitstudent.ca/dmit2025/workbook/labs/catalog/public/view.php?title=Nike%20Dunk%20Low">
+        <div class="card" style="width: 18rem; margin: 10px;">
+            <img src="./Browse by Brand_files/Nike_Dunk_1000x1000.webp" class="card-img-top" alt="Card image">
+            <div class="card-body">
+                <h5 class="card-title">Nike Dunk Low</h5>
+            </div>
+        </div></a>
+        <a class="text-center text-decoration-none text-dark" href="https://comotosho1.dmitstudent.ca/dmit2025/workbook/labs/catalog/public/view.php?title=Nike%20Air%20Force%2001">
+        <div class="card" style="width: 18rem; margin: 10px;">
+            <img src="./Browse by Brand_files/Nike_AF1_1000x1000.webp" class="card-img-top" alt="Card image">
+            <div class="card-body">
+                <h5 class="card-title">Nike Air Force 01</h5>
+            </div>
+        </div></a>
+                            </div>
+                    
+                    </div>
+
+
+
+
+
+<footer class="container py-3 my-4 border-top">
+    <p class="text-center text-muted">This website is an academic exercise. The information on this website may be outdated, and therefore we recommend verifying information from reliable sources, such as each title's publisher.</p>
+  </footer>
+
+</body><div data-klarna-plugin-views-container=""><template shadowrootmode="closed"><div style="position: fixed; left: 0px; top: 0px; z-index: 2147483647;"><div class="react-draggable" style="box-sizing: border-box; display: none; align-items: stretch; flex-direction: column; flex-shrink: 0; border-style: solid; border-width: 0px; position: fixed; z-index: 2; min-height: 0px; min-width: 0px; top: 24px; right: 24px; border-radius: 16px; height: 94vh; background-color: rgb(243, 243, 247); width: 375px; transition-property: transform, box-shadow; transition-timing-function: cubic-bezier(0.25, 0.75, 0.5, 1); transition-duration: 450ms; transform: translate(0px, 0px);"><div style="box-sizing: border-box; display: flex; align-items: stretch; flex-direction: column; flex-shrink: 0; border-style: solid; border-width: 0px; position: absolute; z-index: 0; min-height: 0px; min-width: 0px; inset: 0px;"><div style="flex: 1 1 0%; display: flex; height: 100vh; align-items: center; justify-content: center;"><svg viewBox="0 0 100 100" style="width: 100px; height: 100px;"><style>@keyframes klarna-loader-animation-dotted {0%, 100% { transform: translateY(0); }50% { transform: translateY(-10%); }}</style><circle cx="11.5" cy="50" r="11.5" style="fill: rgb(14, 14, 15); animation: 0.8s ease-in-out 0s infinite normal none running klarna-loader-animation-dotted;"></circle><circle cx="50" cy="50" r="11.5" style="fill: rgb(14, 14, 15); animation: 0.8s ease-in-out 0.2s infinite normal none running klarna-loader-animation-dotted;"></circle><circle cx="88.5" cy="50" r="11.5" style="fill: rgb(14, 14, 15); animation: 0.8s ease-in-out 0.4s infinite normal none running klarna-loader-animation-dotted;"></circle></svg></div></div><div style="box-sizing: border-box; display: flex; align-items: stretch; flex-direction: column; flex-shrink: 0; border-style: solid; border-width: 0px; position: absolute; z-index: 0; min-height: 0px; min-width: 0px; transition-property: opacity; transition-timing-function: ease-out; transition-duration: 300ms; transition-delay: 10ms; inset: 0px; opacity: 0;"><div class="dragHandle" style="box-sizing: border-box; display: flex; align-items: stretch; flex-direction: column; flex-shrink: 0; border-style: solid; border-width: 0px; position: absolute; z-index: 0; min-height: 0px; min-width: 0px; cursor: move; height: 40px; width: 44%; align-self: flex-start; margin-left: 45px;"></div><iframe src="chrome-extension://hfapbcheiepjppjbnkphkmegjlipojba/klapp.html?klapp-id=drawer" allow="clipboard-read; clipboard-write;" style="background-color: rgb(243, 243, 247); border: none; height: 100%; width: 100%; border-radius: 16px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px 0px;"></iframe></div></div><div class="react-draggable" style="box-sizing: border-box; display: flex; align-items: stretch; flex-direction: column; flex-shrink: 0; border-style: solid; border-width: 0px; position: absolute; z-index: 0; min-height: 0px; min-width: 0px; background-color: rgb(243, 243, 247); border-radius: 16px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px 0px; overflow: hidden; transition-property: opacity, transform; transition-timing-function: ease-out; transition-duration: 250ms; width: 375px; pointer-events: none; opacity: 0; height: min(max(0px, min(410px, -48px + 100vh)), -48px + 100vh); left: max(24px, min(100vw, -399px + 100vw)); top: max(24px, min(24px, -24px + 100vh - min(max(0px, min(410px, -48px + 100vh)), -48px + 100vh))); bottom: min(-24px + 100vh - min(max(0px, min(410px, -48px + 100vh)), -48px + 100vh), 24px); transform: translate(0px, 0px);"><div class="dragHandle" style="box-sizing: border-box; display: flex; align-items: stretch; flex-direction: column; flex-shrink: 0; border-style: solid; border-width: 0px; position: absolute; z-index: 999; min-height: 0px; min-width: 0px; cursor: move; height: 60px; width: 48%; align-self: self-start; margin-left: 40px;"></div><div style="flex: 1 1 0%; display: flex; align-items: center; justify-content: center;"><svg viewBox="0 0 100 100" style="width: 100px; height: 100px;"><style>@keyframes klarna-loader-animation-dotted {0%, 100% { transform: translateY(0); }50% { transform: translateY(-10%); }}</style><circle cx="11.5" cy="50" r="11.5" style="fill: rgb(14, 14, 15); animation: 0.8s ease-in-out 0s infinite normal none running klarna-loader-animation-dotted;"></circle><circle cx="50" cy="50" r="11.5" style="fill: rgb(14, 14, 15); animation: 0.8s ease-in-out 0.2s infinite normal none running klarna-loader-animation-dotted;"></circle><circle cx="88.5" cy="50" r="11.5" style="fill: rgb(14, 14, 15); animation: 0.8s ease-in-out 0.4s infinite normal none running klarna-loader-animation-dotted;"></circle></svg></div><div style="box-sizing: border-box; display: flex; align-items: stretch; flex-direction: column; flex-shrink: 0; border-style: solid; border-width: 0px; position: relative; z-index: 0; min-height: 0px; min-width: 0px; transition-property: opacity; transition-timing-function: ease-out; transition-duration: 300ms; transition-delay: 10ms; width: 100%; height: 100%; opacity: 0;"><iframe src="chrome-extension://hfapbcheiepjppjbnkphkmegjlipojba/klapp.html?klapp-id=modals" allow="clipboard-read; clipboard-write;" style="background-color: rgb(243, 243, 247); border: none; height: 100%; width: 100%; border-radius: 16px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px 0px;"></iframe></div></div><div style="box-sizing: border-box; display: flex; align-items: stretch; flex-direction: column; flex-shrink: 0; border-style: solid; border-width: 0px; position: fixed; z-index: 0; min-height: 0px; min-width: 0px; animation-duration: 250ms; animation-fill-mode: both; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px 0px; max-height: calc(-60px + 100vh); width: 198px; padding: 12px 10px; background-color: rgb(243, 243, 247); border-radius: 16px; transition-property: opacity, transform, width, height; transition-timing-function: ease-out, ease-out, ease-in-out, ease-in-out; transition-duration: 250ms, 250ms, 150ms, 150ms; pointer-events: none; opacity: 0; left: max(30px, min(30px, -248px + 100vw)); top: max(30px, min(30px, -74px + 100vh)); transform: translateY(5px);"><div role="button" aria-disabled="false" tabindex="0" style="display: flex; flex-direction: column; cursor: pointer;"><div style="box-sizing: border-box; display: flex; align-items: center; flex-direction: column; flex-shrink: 0; border-style: solid; border-width: 0px; position: absolute; z-index: 0; min-height: 0px; min-width: 0px; justify-content: center; width: 24px; height: 24px; border-radius: 24px; background-color: rgb(243, 243, 247); box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px; top: -20px; right: -20px;"><svg aria-hidden="true" role="img" viewBox="0 0 20 20" height="20" width="20"><g fill="none" fill-rule="evenodd" transform="translate(4, 4) scale(1)"><path d="M7.147 5.994c.292-.133.569-.311.809-.551l3.758-3.759L10.3.27 6.542 4.029a.773.773 0 0 1-1.09 0L1.713.293.3 1.707l3.737 3.736c.246.246.529.429.83.563-.292.133-.569.31-.809.55L.3 10.315l1.414 1.414 3.758-3.757a.771.771 0 0 1 1.092-.001l3.736 3.736 1.414-1.414-3.736-3.737a2.737 2.737 0 0 0-.83-.562Z" fill="rgba(14, 14, 15, 1)" style="transition: fill 0.2s;"></path></g></svg></div></div></div></div></template></div><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
